@@ -1,4 +1,4 @@
-# Detection Lab and Active Directory From Scrathc
+# Detection Lab and Active Directory From Scratch
 
 Building, Attacking and Detecting all in one.
 
