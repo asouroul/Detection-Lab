@@ -154,11 +154,11 @@ index="main" source="WinEventLog:Security" EventCode=4724
 
 ## What I Learned
 
-- DHCP on a DC breaks DNS/replication — the wizard succeeds, the domain doesn't work right.
+- DHCP on a DC breaks DNS/replication.
 - Default audit policy logs almost nothing useful for detection; has to be explicitly enabled via GPO.
-- GPO pushes config domain-wide instead of per-machine — the realistic approach past a single server.
+- GPO pushes config domain-wide instead of per-machine.
 - Windows Security event fields aren't analyst-ready out of the box; needed manual regex extraction in Splunk.
-- The attack was worth running specifically because it forced the whole chain (audit policy → forwarder → SIEM → query) to prove itself against real traffic — a config review alone wouldn't have caught the field-extraction issue.
+- The attack was worth running specifically because it forced the whole chain (audit policy → forwarder → SIEM → query) to prove itself against real traffic.
 
 ---
 
